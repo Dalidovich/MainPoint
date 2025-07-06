@@ -1,0 +1,111 @@
+# MainPoint
+Этот репозиторий служит централизованным каталогом всех моих проектов, модулей и полезных компонентов. Здесь собраны ссылки на репозитории с исходным кодом, а также примеры реализаций различных технологий и архитектурных решений.
+# README **`MainPoint`**
+## Описание проекта
+Путеводитель по проектам [https://github.com/Dalidovich](https://github.com/Dalidovich?tab=repositories)
+
+## Проекты
+- Web App
+    - [ImageToQRCodeASP](https://github.com/Dalidovich/ImageToQRCodeASP)
+    - [DefaultMessager](https://github.com/Dalidovich/DefaultMessager)
+- Web API
+    - HCL project (проект клон Habr)
+        - [HCL.APIGateway (на Ocelot)](https://github.com/Dalidovich/HCL.APIGateway)
+        - [HCL.ArticleService.API](https://github.com/Dalidovich/HCL.ArticleService.API)
+        - [HCL.CommentServer.API](https://github.com/Dalidovich/HCL.CommentServer.API)
+        - [HCL.IdentityServer.API](https://github.com/Dalidovich/HCL.IdentityServer.API)
+        - [HCL.NotificationSubscriptionServer.API](https://github.com/Dalidovich/HCL.NotificationSubscriptionServer.API)
+    - [FileStatisticsWatcher](https://github.com/Dalidovich/FileStatisticsWatcher)
+    - [GithubActionBuildTests](https://github.com/Dalidovich/GithubActionBuildTests)
+    - [LocalS3API](https://github.com/Dalidovich/LocalS3API)
+    - [WebAPIASPTemplate](https://github.com/Dalidovich/WebAPIASPTemplate)
+    - [FuturesClean.API](https://github.com/Dalidovich/FuturesClean.API)
+    - [TestConnector.TestAPI](https://github.com/Dalidovich/TestConnector.TestAPI)
+    - [AdminDashboard.API](https://github.com/Dalidovich/AdminDashboard.API)
+- Console App
+    - System app
+        - [ConsoleTransitionsDataByLAN (Consumer и Producer на TCP протоколе)](https://github.com/Dalidovich/ConsoleTransitionsDataByLAN)
+        - [ConsoleAudioPlayer](https://github.com/Dalidovich/ConsoleAudioPlayer)
+        - [getSystemDeviceData](https://github.com/Dalidovich/getSystemDeviceData)
+        - [DetecterUSBDevice](https://github.com/Dalidovich/DetecterUSBDevice)
+    - с SFML Визуализацией
+        - [NeuralNetworkExample](https://github.com/Dalidovich/NeuralNetworkExample)
+        - [PathFindAlgorithmDemo](https://github.com/Dalidovich/PathFindAlgorithmDemo)
+        - [ArraySortVisualization](https://github.com/Dalidovich/ArraySortVisualization)
+    - [CrackRARArchive](https://github.com/Dalidovich/CrackRARArchive)
+    - [imageToQRCode](https://github.com/Dalidovich/imageToQRCode)
+    - [neuralNetworkRelationNeuronEachToEach](https://github.com/Dalidovich/neuralNetworkRelationNeuronEachToEach)
+    - [xmlParser](https://github.com/Dalidovich/xmlParser)
+- Web (JS)
+    - [GameLife](https://github.com/Dalidovich/GameLife)
+
+## Модули для переиспользования
+- [drag-and-drop js `(ImageToQRCodeASP)`](https://github.com/Dalidovich/ImageToQRCodeASP/blob/master/ImageToQRCodeWebSite/Views/Home/Index.cshtml)
+- Сетевые модули
+    - [Web soket client `(TestConnector.TestAPI)`](https://github.com/Dalidovich/TestConnector.TestAPI/blob/master/TestConnector/WevSocket/WebSocketClientParser.cs)
+    - [gRPC `(HCL.IdentityServer.API)`](https://github.com/Dalidovich/HCL.IdentityServer.API/blob/master/HCL.IdentityServer.API.BLL/Protos/AthorService.proto)
+    - TCP
+        - [TCP client `(ConsoleTransitionsDataByLAN)`](https://github.com/Dalidovich/ConsoleTransitionsDataByLAN/blob/master/ConsoleTransitionsDataByLAN.Consumer/TCPConsumer.cs)
+        - [TCP Listener `(ConsoleTransitionsDataByLAN)`](https://github.com/Dalidovich/ConsoleTransitionsDataByLAN/blob/master/ConsoleTransitionsDataByLAN.Producer/TCPProducer.cs)
+- JWT
+    - With Refresh token
+        - [`DefaultMessager`](https://github.com/Dalidovich/DefaultMessager/blob/infinityScroll/DefaultMessager.BLL/Implementation/AccountService.cs)
+        - [`AdminDashboard.API`](https://github.com/Dalidovich/AdminDashboard.API/blob/master/AdminDashboard.API.BLL/Services/RegistrationService.cs)
+    - Without Refresh token
+        - [`HCL.IdentityServer.API`](https://github.com/Dalidovich/HCL.IdentityServer.API/blob/master/HCL.IdentityServer.API.BLL/Services/TokenService.cs)
+- QR CODE
+    - [`imageToQRCode`](https://github.com/Dalidovich/imageToQRCode/blob/master/imageToQRCode/ImgToQRCodeConverter.cs)
+    - [`ImageToQRCodeASP`](https://github.com/Dalidovich/ImageToQRCodeASP/blob/master/ImageToQRCodeWebSite/Models/ImgToQRCodeConverter.cs)
+- Сервисы
+    - [Update builder `(AdminDashboard.API)`](https://github.com/Dalidovich/AdminDashboard.API/tree/master/AdminDashboard.API.BLL/Services/HelperService)
+    - Midleware
+        - [ExceptionHandling Midleware](https://github.com/Dalidovich/WebAPIASPTemplate/blob/master/WebAPIASPTemplate.API/Midlaware/ExceptionHandlingMiddleware.cs)
+    - Hosted service
+        - [CheckDB HostedService](https://github.com/Dalidovich/WebAPIASPTemplate/blob/master/WebAPIASPTemplate.API/HostedServices/CheckDBHostedService.cs)
+        - [EnterSeedData HostedService](https://github.com/Dalidovich/WebAPIASPTemplate/blob/master/WebAPIASPTemplate.API/HostedServices/EnterSeedDataHostedService.cs)
+
+- [Windows Context Menu Regisrated `(ConsoleAudioPlayer)`](https://github.com/Dalidovich/ConsoleAudioPlayer/blob/master/ConsoleAudioPlayer/PlayerSettings/ContextMenuRegisrated.cs)
+
+- [Benchmark `(PathFindAlgorithmDemo)`](https://github.com/Dalidovich/PathFindAlgorithmDemo/tree/master/PathFindAlgorithmDemo.Benchmark)
+- Визуализация
+    - Fronend
+        - [Frontend на React + Vite `(AdminDashboard)`](https://github.com/Dalidovich/AdminDashboard.API/tree/master/AdminDashboard)
+    - SFML
+        - [`NeuralNetworkExample`](https://github.com/Dalidovich/NeuralNetworkExample/blob/master/NeuralNetworkExample/ExampleImplement/DataSection/Implement/DataNNSectionWithSFML.cs)
+        - [`PathFindAlgorithmDemo`](https://github.com/Dalidovich/PathFindAlgorithmDemo/blob/master/PathFindAlgorithmDemo/HelpFullTools/Display.cs#L141)
+        - [`ArraySortVisualization`](https://github.com/Dalidovich/ArraySortVisualization/blob/master/ArraySortVisualization/Visualization.cs#L91)
+    - ASCII
+        - [`NeuralNetworkExample`](https://github.com/Dalidovich/NeuralNetworkExample/blob/master/NeuralNetworkExample/ExampleImplement/DataSection/Implement/DataNNSectionWithSymbols.cs)
+    - Console
+        - [`ConsoleAudioPlayer`](https://github.com/Dalidovich/ConsoleAudioPlayer/blob/master/ConsoleAudioPlayer/VisualizeComponent/Visualizer.cs)
+- [Iterator `(CrackRARArchive)`](https://github.com/Dalidovich/CrackRARArchive/blob/master/CrackRARArchive/IteratorOnArray.cs)
+- OData
+    - [`HCL.ArticleService.API` (MongoDB)](https://github.com/Dalidovich/HCL.ArticleService.API/blob/master/HCL.ArticleService.API/DIManger.cs#L37)
+    - [`HCL.CommentServer.API` (PostgreSQL)](https://github.com/Dalidovich/HCL.CommentServer.API/blob/master/HCL.CommentServer.API/DIManger.cs#L43)
+- HCL project
+    - У каждого сервиса
+        - **JWT** *(для регистрации/авторизации/аунтификации)*
+        - **Elasticsearch + Serilog**
+        - **docker-compose**
+        - **интеграционные и unit тестирование**
+    - [IdentityServer](https://github.com/Dalidovich/HCL.IdentityServer.API)
+        - **PostgreSQL**
+        - **Redis** *(для кеширования публичных данных пользователя)*
+        - **gRPC** *(для передачи публичных данных пользователя)*
+        - **CI/CD** *GitHub Actions*
+    - [ArticleService](https://github.com/Dalidovich/HCL.ArticleService.API)
+        - **MongoDB** *(для хранения статей произвольного формата)*
+        - **OData** *(гибкий способ получения данных)*
+        - **gRPC** *(для получения публичных данных пользователя, если нет кешированных данных)*
+        - **Redis** *(для получения кешированных публичных данных пользователя)*
+        - **Kafka** *(сообщения при создании статьи)*
+        - **Hangfire** *(обновления состояния актуальности статьи)*
+    - [CommentServer](https://github.com/Dalidovich/HCL.IdentityServer.API)
+        - **PostgreSQL**
+        - **OData** *(гибкий способ получения данных)*
+        - **SignalR** *(Real-time связь)*
+        - **Kubernetes** *(опционально)*
+    - [NotificationSubscriptionServer](https://github.com/Dalidovich/HCL.IdentityServer.API)
+        - **PostgreSQL**
+        - **Kafka** *(получение сообщений при создании статьи для уведомлений)*
+        - **OData** *(гибкий способ получения данных)*
